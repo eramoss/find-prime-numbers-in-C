@@ -8,6 +8,7 @@
 
 int allPrimeNumbers[ARRAY_SIZE] = {FIRSTS_OF_PRIME_NUMBERS};
 int nextValue = LAST_VALUE_OF_PREALLOCATED_ARRAY;
+int position = FIRST_POSITION_AFTER_FIVE;
 
 bool isPrime(int value, int position) {
   
@@ -22,7 +23,7 @@ bool isPrime(int value, int position) {
 
 bool  NextNumber() {
   
-  int position = FIRST_POSITION_AFTER_FIVE;
+  
   if (isPrime(nextValue, position-1)) {
     allPrimeNumbers[position] = nextValue;
     printf("%d\n",allPrimeNumbers[position]);
